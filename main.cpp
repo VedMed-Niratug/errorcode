@@ -10,8 +10,7 @@ ostream& operator<< (ostream& out, const Documents& documents) {
     bool first = true;
     for (const auto& document : documents) {
         if (!first) {
-            out << ", "s << document;
-            continue;
+            out << ", "s;
         }
         out << document;
         first = false;
