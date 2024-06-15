@@ -11,6 +11,7 @@ ostream& operator<< (ostream& out, const Documents& documents) {
     for (const auto& document : documents) {
         if (!first) {
             out << ", "s << document;
+            continue;
         }
         out << document;
         first = false;
